@@ -60,10 +60,11 @@ func BenchmarkEx4MultiplesOf3and5(b *testing.B) {
 	}
 }
 
-// func BenchmarkF1(b *testing.B) {
+// func BenchmarkEx4MultiplesOf3and5V2(b *testing.B) {
 // 	// run function b.N times
 // 	for n := 0; n < b.N; n++ {
 // 		// Call your function
+// 		Ex4MultiplesOf3and5V2(10000)
 // 	}
 // }
 

@@ -4,7 +4,6 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"time"
 )
 
 /*
@@ -73,45 +72,6 @@ func Ex4MultiplesOf3and5(number int) int {
 	//
 
 	return sum
-}
-
-type UserInfo struct {
-	ID       int
-	Name     string
-	Company  string
-	Position string
-	Address  UserAddress
-}
-type UserAddress struct {
-	AddressNo   string
-	SubDistrict string
-	District    string
-	Province    string
-	Postcode    int
-}
-
-func GetUserBasicInfo(id int) (UserInfo, error) {
-	// Simulate database slow query
-	time.Sleep(500 * time.Millisecond)
-	user := UserInfo{
-		ID:       id,
-		Name:     "John Ginger",
-		Company:  "JLC Group",
-		Position: "Developer",
-	}
-	return user, nil
-}
-func GetUserAddress(id int) (UserAddress, error) {
-	// Simulate database slow query
-	time.Sleep(800 * time.Millisecond)
-	userAddress := UserAddress{
-		AddressNo:   "62 ซ.นาคนิวาส 6",
-		SubDistrict: "ลาดพร้าว",
-		District:    "ลาดพร้าว",
-		Province:    "กทม",
-		Postcode:    10230,
-	}
-	return userAddress, nil
 }
 
 func main() {
